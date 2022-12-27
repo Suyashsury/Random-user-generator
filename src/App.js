@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import logo from "./logo.svg";
+import "./App.css";
+import { Button } from "react-bootstrap";
+import Data from "./data.json";
+import { SectionDetails } from "./components/SectionDetails/SectionDetails";
 function App() {
+  const loadDetails = () => {
+    console.log(Data.results);
+  };
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="user-generator-page">
+      <div className="header-section">
+        <h4>Krishna Bhamare</h4>
+        <Button variant="dark" onClick={loadDetails}>
+          Generate New User
+        </Button>
+      </div>
+      <SectionDetails detail={Data.results[0]} />
     </div>
   );
 }

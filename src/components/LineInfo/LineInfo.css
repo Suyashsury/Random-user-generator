@@ -1,0 +1,15 @@
+.flex-align {
+    display: flex;
+    border-top: 1px solid gray;
+    align-items: center;
+    padding: 5px;
+}
+.flex-align label {
+    width: 200px;
+}
+.val {
+    margin: 0;
+}
+.flex-align * {
+    font-size: 12px;
+}
