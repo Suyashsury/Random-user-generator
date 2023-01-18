@@ -4,3 +4,39 @@
   align-items: center;
   margin: 10px;
 }
+.main{
+  display: flex;
+}
+
+.userinfo{
+  display: flex;
+  border-top: 1px solid black;
+  font-size: 12px;
+}
+.userinfo label{
+  width: 150px;
+  margin-left: 20px;
+ 
+}
+.password{
+  display: flex;
+  border-top: 1px solid black;
+  font-size: 12px;
+
+}
+.password label{
+  width: 150px;
+  margin-left: 20px;
+
+}
+.login h6{
+  margin-left: 100px;
+  margin-bottom: 10px;
+}
+.login img{
+  margin-left: 70px;
+  
+}
+.login{
+  margin-top: 30px;
+}
